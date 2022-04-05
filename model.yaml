@@ -7,11 +7,11 @@ servers:
   - url: "http://127.0.0.1:8000"
 
 paths:
-  /chars/{charEncoding}:
+  /chars/{char_encoding}:
     get:
       summary: "Returns the encoded utf-8 character"
       parameters:
-        - name: "charEncoding"
+        - name: "char_encoding"
           in: "path"
           required: true
           description: "A number representing a character in utf-8 encoding system"
@@ -29,7 +29,7 @@ paths:
         "404":
           description: "A character with the specified encoding was not found"
   
-  /codes/{char}:
+  /encodings/{char}:
     get:
       summary: "Returns the encoding of a utf-8 character"
       parameters:
